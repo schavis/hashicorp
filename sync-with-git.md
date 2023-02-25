@@ -48,5 +48,5 @@ To apply remote changes with a single command, run `git pull origin BRANCH_NAME`
 `git push` takes our current branch, and checks to see whether or not there is a tracking branch for a remote repository connected to it. If so, our changes are taken from our branch and pushed to the remote branch. This is how code is shared with a remote repository, you can think of it as "make the remote branch resemble my local branch".
 
 Your push will fail if the remote branch has changes that you have not applied
-to your local branch. When a push fails, your local branch needs to be
-synchronized with the remote branch with git pull or git fetch and git merge.
+to your local branch. To fix the error, sync your local branch with `git pull`
+or `git fetch` and `git merge` then push your changes again.
